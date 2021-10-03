@@ -1,0 +1,48 @@
+git branch feature-one
+git branch feature-two
+git branch integeration-branch
+
+git checkout feature-one
+git add .
+git commit -m"intial commit"
+git commit -m"final commit"
+git checkout feature-two
+git add .
+git commit -m"changes in html file"
+git commit -m"index.html file modified"
+git checkout feature-one
+
+git rebase integeration-branch
+git checkout feature-two
+git log --oneline
+git merge integeration-branch
+
+git commit -m "final version"
+
+git merge feature-one
+git checkout integeration-branch
+git merge feature-one
+git merge feature-two
+
+git branch Hot-Fix-Branch
+git commit-m"commit"
+git merge integeration-branch
+git add .
+git commit-m"commit"
+git merge integeration-branch
+git add .
+git commit-m"commit"
+
+git add .
+git commit-m"intial changes"
+git merge integeration-branch
+
+git branch Production-Branch
+git add .
+git commit-m"changes in index.html"
+git add .
+git commit -m"modified html file"
+git merge integeration-branch
+git add .
+git commit -m "changes in commit"
+git log --oneline
